@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Window Price Calculator</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Meta name -->
+      <meta name="title" content="Window Price Calculator">
+      <meta name="description" content="Window Price Calculator">
+      <meta name="keywords" content="Window Price Calculator">
+      <!-- all css here -->
+      <!-- bootstrap v3.3.7 css -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <!-- responsive css -->
+      <link rel="stylesheet" href="assets/css/responsive.css">
+      <!--print js -->
+      <link rel="stylesheet" href="assets/css/print.min.css">
+   </head>
+   <body>
+      <section class="calculate mt-100 mb-100">
+         <div class="container">
+         <div class="row mb-100">
+            <div class="col-md-7 col-sm-10  col-xs-12 wow fadeInUp">
+               <div class="section-title section-title2">
+                  <h2>Window Price Calculator</h2>
+                  <p>Multi type window price calculator, width, length, height, price, type of glass, brands, colors, window frame etc</p>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content.sm-center">
+            <div class="col-md-2 col-sm-3 col-xs-12">
+               <div class="tab">
+                  <div id="defaultOpen" class="tablinks active" onclick="openCity(event, 'London')">
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-window-type" viewBox="0 0 24 33">
+                           <path d="M0 0v33h24V0H0zm22 31H2V2h20v29z"></path>
+                        </svg>
+                     </span>
+                  </div>
+                  <div class="tablinks" onclick="openCity(event, 'Berlin')">
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-window-type-2" viewBox="0 0 30 33">
+                           <path d="M0 0v33h30V0H0zm2 31V2h12v29H2zm26 0H16V2h12v29z"></path>
+                        </svg>
+                     </span>
+                  </div>
+                  <div class="tablinks" onclick="openCity(event, 'Paris')">
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-window-type-6" viewBox="0 0 30 45">
+                           <path d="M0 0v45h16V31.9h14V0H0zm14 43H2V2h12v41zm14-13H16V2h12v28z"></path>
+                        </svg>
+                     </span>
+                  </div>
+                  <div class="tablinks" onclick="openCity(event, 'Newyork')">
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="73" height="39" viewBox="0 0 73 39">
+                           <g id="window-three" transform="translate(-314 -255)">
+                              <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(314 255)" fill="none" stroke="#bac2c9" stroke-width="3">
+                                 <rect width="73" height="39" stroke="none" />
+                                 <rect x="1.5" y="1.5" width="70" height="36" fill="none" />
+                              </g>
+                              <line id="Line_1" data-name="Line 1" y2="38" transform="translate(337.5 255.5)" fill="none" stroke="#bac2c9" stroke-width="3" />
+                              <line id="Line_2" data-name="Line 2" y2="38" transform="translate(361.5 255.5)" fill="none" stroke="#bac2c9" stroke-width="3" />
+                           </g>
+                        </svg>
+                     </span>
+                  </div>
+                  <div class="tablinks" onclick="openCity(event, 'Tokyo')">
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="69" height="51" viewBox="0 0 69 51">
+                           <g id="walcon-three" transform="translate(-317 -252)">
+                              <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(317 252)" fill="none" stroke="#bac2c9" stroke-width="3">
+                                 <rect width="48" height="39" stroke="none" />
+                                 <rect x="1.5" y="1.5" width="45" height="36" fill="none" />
+                              </g>
+                              <line id="Line_3" data-name="Line 3" y2="37" transform="translate(341.5 252.5)" fill="none" stroke="#bac2c9" stroke-width="3" />
+                              <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(363 252)" fill="none" stroke="#bac2c9" stroke-width="3">
+                                 <rect width="23" height="51" stroke="none" />
+                                 <rect x="1.5" y="1.5" width="20" height="48" fill="none" />
+                              </g>
+                           </g>
+                        </svg>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <!---->
+            <!--London tab starting content -->
+            <div id="London" class="tabcontent">
+               <div class="col-md-6 col-sm-9 col-xs-12 myClass">
+                  <div class="left-range">
+                     <span>...</span>
+                     <input type="range" min="1000" max="1600" value="1000" class="slider1" id="slider1" />
+                     <span class="left-margin"><small>1000</small></span>
+                     <span class="right-margin"><small>1600</small></span>
+                  </div>
+                  <div class="left-column">
+                     <img id="negdeh" data-image="red" class="isactive" src="assets/images/1window/g.jpg" alt="Битүү">
+                  </div>
+                  <div class="right-range">
+                     <span>...</span>
+                     <input type="range" min="500" max="800" value="500" class="slider" id="slider" />
+                     <span class="left-margin"><small>500</small></span>
+                     <span class="right-margin"><small>800</small></span>
+                  </div>
+                  <div class="box mt-30">
+                     <center>
+                        <div class="a">Height: <input id="london-value-height" name="poo" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertLondonSlider1()" />
+                        </div>
+                        <div class="a">Width: <input id="london-value-width" value="" name="poo" maxlength="4" size="4" min="1000" max="1600" onchange="insertLondonSlider()" /> mm</div>
+                        <hr>
+                     </center>
+                     <!-- Product Color -->
+                     <div class="product-color">
+                        <span>Select a window to open
+                        </span>
+                        <div class="color-choose">
+                           <div>
+                              <select class="form-control" id="neg" onchange="changeFunction()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--London tab ending content-->
+            <!--Berlin tab starting content -->
+            <div id="Berlin" class="tabcontent">
+               <div class="col-md-6 col-sm-9 col-xs-12 myClass">
+                  <div class="left-range">
+                     <span>...</span>
+                     <input type="range" min="1000" max="1600" value="1000" class="slider1" id="bslider1" />
+                     <span class="left-margin"><small>1000</small></span>
+                     <span class="right-margin"><small>1600</small></span>
+                  </div>
+                  <div class="left-column">
+                     <img id="hoyrdoh" data-image="hoyrdoh" class="isactive" src="assets/images/2window/g_g.jpg" alt="Битүү">
+                  </div>
+                  <div class="right-range">
+                     <span>...</span>
+                     <input type="range" min="1000" max="1600" value="1000" class="slider" id="bslider" />
+                     <span class="left-margin"><small>1000</small></span>
+                     <span class="right-margin"><small>1600</small></span>
+                  </div>
+                  <div class="box mt-30">
+                     <center>
+                        <div class="a">Height: <input id="berlin-value-height" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertBerlinSlider1()" />
+                        </div>
+                        <div class="a">Width: <input id="berlin-value-width" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertBerlinSlider()" /> mm</div>
+                     </center>
+                     <hr>
+                     <!-- Product Color -->
+                     <div class="product-color">
+                        <span>Select a window to open
+                        </span>
+                        <div class="color-choose">
+                           <div>
+                              <select class="form-control" id="hoyor" onchange="hoyrdohFunction()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="o" name="color" value="o">Folding</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                              <select class="form-control" id="hoyor1" onchange="hoyrdoh1Function()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="o" name="color" value="o">Folding</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+               </div>
+            </div>
+            <!--Berlin tab ending content -->
+            <!--Paris tab starting content -->
+            <div id="Paris" class="tabcontent">
+               <div class="col-md-6 col-sm-9 col-xs-12 myClass">
+                  <div class="left-range">
+                     <span>...</span>
+                     <input type="range" min="1900" max="2700" value="1900" class="slider1" id="pslider1" />
+                     <span class="left-margin"><small>1900</small></span>
+                     <span class="right-margin"><small>2700</small></span>
+                  </div>
+                  <div class="left-column">
+                     <img data-image="gurawdah" class="isactive" id="gurawdah" src="assets/images/onewithBalcon/g.jpg" alt="Энгийн">
+                  </div>
+                  <div class="right-range">
+                     <span>...</span>
+                     <input type="range" min="1000" max="1650" value="1000" class="slider" id="pslider" />
+                     <span class="left-margin"><small>1000</small></span>
+                     <span class="right-margin"><small>1650</small></span>
+                  </div>
+                  <div class="box mt-30">
+                     <center>
+                        <div class="a">Height: <input id="paris-value-height" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertParisSlider1()" />
+                        </div>
+                        <div class="a">Width: <input id="paris-value-width" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertParisSlider()" /> mm</div>
+                     </center>
+                     <hr>
+                     <!-- Product Color -->
+                     <div class="product-color">
+                        <span>Select a window to open
+                        </span>
+                        <div class="color-choose">
+                           <div>
+                              <select class="form-control" id="guraw" onchange="gurawdahFunction()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="o" name="color" value="o">Folding</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Paris hot tab ending content -->
+            <!--Newyork tab starting content -->
+            <div id="Newyork" class="tabcontent">
+               <div class="col-md-6 col-sm-9 col-xs-12 myClass">
+                  <div class="left-range">
+                     <span>...</span>
+                     <input type="range" min="1000" max="1600" value="1000" class="slider1" id="nslider1" />
+                     <span class="left-margin"><small>1000</small></span>
+                     <span class="right-margin"><small>1600</small></span>
+                  </div>
+                  <div class="left-column">
+                     <img id="duruwdeh" data-image="duruwdeh" class="isactive" src="assets/images/3window/g_g_g.jpg" alt="Битүү">
+                  </div>
+                  <div class="right-range">
+                     <span>...</span>
+                     <input type="range" min="1700" max="2700" value="1700" class="slider" id="nslider" />
+                     <span class="left-margin"><small>1700</small></span>
+                     <span class="right-margin"><small>2700</small></span>
+                  </div>
+                  <div class="box mt-30">
+                     <center>
+                        <div class="a">Height: <input id="newyork-value-height" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertNewyorkSlider1()" />
+                        </div>
+                        <div class="a">Width: <input id="newyork-value-width" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertNewyorkSlider()" /> mm</div>
+                     </center>
+                     <hr>
+                     <!-- Product Color -->
+                     <div class="product-color">
+                        <span>Select a window to open
+                        </span>
+                        <div class="color-choose">
+                           <div>
+                              <select class="form-control" id="duruw" onchange="duruwdehFunction()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="o" name="color" value="o">Folding</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                              <select class="form-control" id="duruw1" onchange="duruwdeh1Function()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="o" name="color" value="o">Folding</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                              <select class="form-control" id="duruw2" onchange="duruwdeh2Function()">
+                                 <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                 <option data-image="p" name="color" value="p">Swivel</option>
+                                 <option data-image="o" name="color" value="o">Folding</option>
+                                 <option data-image="po" name="color" value="po">Swing-out</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Newyork hot tab ending content -->
+            <!--Tokyo tab starting content -->
+            <div id="Tokyo" class="tabcontent">
+               <div class="col-md-6 col-sm-9 col-xs-12 myClass">
+                  <div class="left-range">
+                     <span>...</span>
+                     <input type="range" min="1900" max="2700" value="1900" class="slider1" id="tslider1" />
+                     <span class="left-margin"><small>1900</small></span>
+                     <span class="right-margin"><small>2700</small></span>
+                  </div>
+                  <div class="left-column">
+                     <img id="tawdah" data-image="red" class="isactive" src="assets/images/WithBalcon/g_g.jpg" alt="Битүү">
+                  </div>
+                  <div class="right-range">
+                     <span>...</span>
+                     <input type="range" min="1300" max="2700" value="1300" class="slider" id="tslider" />
+                     <span class="left-margin"><small>1300</small></span>
+                     <span class="right-margin"><small>2700</small></span>
+                  </div>
+                  <div class="box mt-30">
+                     <center>
+                        <div class="a">Height: <input id="tokyo-value-height" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertTokyoSlider1()" />
+                        </div>
+                        <div class="a">Width: <input id="tokyo-value-width" value="" maxlength="4" size="4" min="1000" max="1600" onchange="insertTokyoSlider()" /> mm</div>
+                     </center>
+                     <hr>
+                     <!-- Product Configuration -->
+                     <div class="product-configuration">
+                        <!-- Product Color -->
+                        <div class="product-color">
+                           <span>Select a window to open
+                           </span>
+                           <div class="color-choose">
+                              <div>
+                                 <select class="form-control" id="taw" onchange="tawdahFunction()">
+                                    <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                    <option data-image="p" name="color" value="p">Swivel</option>
+                                    <option data-image="o" name="color" value="o">Folding</option>
+                                    <option data-image="po" name="color" value="po">Swing-out</option>
+                                 </select>
+                                 <select class="form-control" id="taw1" onchange="tawdah1Function()">
+                                    <option data-image="g" name="color" value="g" selected>Deaf</option>
+                                    <option data-image="p" name="color" value="p">Swivel</option>
+                                    <option data-image="o" name="color" value="o">Folding</option>
+                                    <option data-image="po" name="color" value="po">Swing-out</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-----Tokyo tab ending------------------->
+            <!-----------Right Column---------------------------------------------------------------->
+            <div class="col-md-4 col-sm-6 col-xs-12 myRes">
+               <div class="right-column">
+                  <!-- Product Description -->
+                  <div class="product-description">
+                     <span>Window industry
+                     </span>
+                     <h1>Calculator
+                     </h1>
+                     <p> Multi type window price calculator, width, length, height, price, type of glass, brands, colors, window frame etc
+                     </p>
+                  </div>
+                  <!-- Product Configuration -->
+                  <div class="product-configuration">
+                     <div class="window_zuzaan">
+                        <span>Brands</span>
+                        <select class="form-control mt-15" id="changeLondonBrand" onchange="brandPriceFunction(this)">
+                           <option data-image="p_g" id="p_g" name="color" selected value="Евро Стандарт">Euro Standart</option>
+                           <option data-image="g_g" id="g_g" name="color" value="Veka">Veka</option>
+                           <option data-image="po_g" id="po_g" name="color" value="Fornax">Fornax</option>
+                        </select>
+                     </div>
+                     <hr>
+                     <!-- Color Configuration -->
+                     <div class="cable-config">
+                        <span>Please choose color
+                        </span>
+                        <div id="for-active-london" class="cable-choose">
+                           <button type="button" data-image="white" id="whiteColor" class="btn london-choosed" name="color" value="энгийн цагаан"></button>
+                           <button type="button" class="btn" data-image="brown" id="color1" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color2" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color3" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color4" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color5" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color6" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color7" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color8" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color9" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color10" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color11" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color12" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color13" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color14" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color15" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color16" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color17" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color18" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color19" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color20" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color21" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color22" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color23" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color24" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color25" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color26" name="color" value="бор"></button>
+                           <button type="button" class="btn" data-image="brown" id="color27" name="color" value="бор"></button>
+                        </div>
+                        <div class="btn-group btn-toggle mt-15">
+                           <fieldset id="button1" disabled>
+                              <button id="oneSide" class="btn btn-primary active">1 side</button>
+                              <button id="twoSide" class="btn btn-default ">2 side</button>
+                           </fieldset>
+                        </div>
+                        <br>
+                        <a href="#">The price will increase the subscription fee.
+                        </a>
+                     </div>
+                     <div class="window_zuzaan">
+                        <span>Please choose the type of glass!</span>
+                        <div class="btn-group btn-toggle mt-15">
+                           <button id="twoGlass" class="btn btn-primary active">2 layer glass</button>
+                           <button id="threeGlass" class="btn btn-default ">3 layer glass</button>
+                        </div>
+                     </div>
+                     <hr>
+                  </div>
+               </div>
+            </div>
+            <!--------------Right column ending---------------------------------------------------------->
+         </div>
+         <!--Tokyo hot tab ending content -->
+         <!--нэмэлт хсэг -->
+         <div class="row justify-content.sm-center rowChoose">
+            <hr>
+            <!--Amalgaanii heseg Starting-->
+            <div class="col-md-4 col-sm-4 songolt-column">
+               <fieldset id="amalgaa-column">
+                  <center>
+                     <span>Inside promise</span>
+                     <div class="img">
+                        <img id="amalgaa-photo" class="foo" src="assets/images/accessor/corner.png" alt="">
+                        <img class="insidePromise" src="assets/images/accessor/window1.png" alt="">
+                     </div>
+                  </center>
+                  <center>
+                     <div class="amalgaa">
+                        <img src="assets/images/accessor/lines.png" alt="">
+                        <input type="range" min="20" max="60" value="20" step="10" class="aslider" id="amalgaa-slider" />
+                        <span class="floatleft">20</span>
+                        <span class="floatright">60</span>
+                     </div>
+                  </center>
+                  <br>
+                  <br>
+                  <span>Length <span><input type="text" id="london-amalgaa" onchange="amalgaaSlider()" class="rangeInputBottom" value="40" maxlength="2" size="1" /><span> mm</span>
+                  <div class="color mt-20">
+                     <span>Please choose color</span>
+                     <div class="cable-choose mt-20">
+                        <button onclick="document.getElementById('amalgaa-photo').src='assets/images/accessor/corner.png',document.getElementById('amalgaaColor').innerHTML='Цагаан'" type="button" data-image="red" id="brown" name="color" value="red" checked></button>
+                        <button onclick="document.getElementById('amalgaa-photo').src='assets/images/accessor/corner-bor.png',document.getElementById('amalgaaColor').innerHTML='Бор'" type="button" data-image="blue" id="choco" name="color" value="blue">
+                     </div>
+                  </div>
+                  <hr>
+               </fieldset>
+               <div class="btn-group btn-toggle mt-15">
+               <button id="ion" class="btn btn-primary active" onclick="document.getElementById('amalgaa-column').disabled = false;">on</button>
+               <button id="ioff" class="btn btn-default " onclick="document.getElementById('amalgaa-column').disabled = true;">off</button>
+               </div>
+            </div>
+            <!--Amalgaanii heseg duusaw-->
+            <!--Tawtsan heseg-->
+            <div class="col-md-4 col-sm-4 songolt-column">
+               <fieldset id="tawtsan-column">
+                  <center>
+                     <span>Indoor deck</span>
+                     <div class="img">
+                        <img src="assets/images/accessor/window_corner.png" alt="" id="indoorDeck">
+                        <img id="tawtsan-photo" class="mid-photo" src="assets/images/accessor/tawtsan.png" alt="">
+                     </div>
+                  </center>
+                  <center>
+                     <div class="amalgaa">
+                        <img src="assets/images/accessor/lines.png" alt="">
+                        <input type="range" min="20" max="60" value="20" step="10" class="aslider" id="tawtsan-slider" />
+                        <span class="floatleft">20</span>
+                        <span class="floatright">60</span>
+                     </div>
+                  </center>
+                  <br>
+                  <br>
+                  <span>Length <span><input type="text" id="tawtsan" onchange="tawtsanSlider()" class="rangeInputBottom" readonly name="" value="40" maxlength="2" size="1" /><span> mm</span>
+                  <div class="color mt-20">
+                     <span>Please choose color</span>
+                     <div class="cable-choose mt-20">
+                        <button onclick="document.getElementById('tawtsan-photo').src='assets/images/accessor/tawtsan.png', document.getElementById('tawtsanColor').innerHTML='Цагаан'" type="button" data-image="red" id="brown" name="color" value="red" checked></button>
+                        <button onclick="document.getElementById('tawtsan-photo').src='assets/images/accessor/tawtsan-bor.png', document.getElementById('tawtsanColor').innerHTML='Бор'" type="button" data-image="blue" id="choco" name="color" value="blue">
+                     </div>
+                  </div>
+                  <hr>
+               </fieldset>
+               <div class="btn-group btn-toggle mt-15">
+               <button id="ton" class="btn btn-primary active" onclick="document.getElementById('tawtsan-column').disabled = false;">on</button>
+               <button id="toff" class="btn btn-default " onclick="document.getElementById('tawtsan-column').disabled = true;">off</button>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-4 songolt-column">
+               <fieldset id="haylaga-column">
+                  <center>
+                     <span>Water discharge</span>
+                     <div class="img">
+                        <img id="haylaga-photo" class="right-photo" src="assets/images/accessor/water_prob.png" alt="">
+                     </div>
+                  </center>
+                  <center>
+                     <div class="amalgaa">
+                        <img src="assets/images/accessor/lines.png" alt="">
+                        <input type="range" min="20" max="60" value="20" step="10" class="aslider" id="haylaga-slider" />
+                        <span class="floatleft">20</span>
+                        <span class="floatright">60</span>
+                     </div>
+                  </center>
+                  <br>
+                  <br>
+                  <span>Length <span><input type="text" id="haylaga" onchange="haylagaSlider()" class="rangeInputBottom" readonly name="" value="40" maxlength="2" size="1" /><span> mm</span>
+                  <div class="color mt-20">
+                     <span>Please choose color</span>
+                     <div class="cable-choose mt-20">
+                        <button onclick="document.getElementById('haylaga-photo').src='assets/images/accessor/water_prob.png', document.getElementById('haylagaColor').innerHTML='Цагаан'" type="button" data-image="red" id="brown" name="color" value="red" checked></button>
+                        <button onclick="document.getElementById('haylaga-photo').src='assets/images/accessor/water_prob-bor.png',document.getElementById('haylagaColor').innerHTML='Бор'" type="button" data-image="blue" id="choco" name="color" value="blue">
+                     </div>
+                  </div>
+                  <hr>
+               </fieldset>
+               <div class="btn-group btn-toggle mt-15">
+               <button id="hon" class="btn btn-primary active" onclick="document.getElementById('haylaga-column').disabled = false;">on</button>
+               <button id="hoff" class="btn btn-default " onclick="document.getElementById('haylaga-column').disabled = true;">off</button>
+               </div>
+            </div>
+         </div>
+         <!--Row ending-->
+         <div id="forPrint">
+            <div class="row justify-content.sm-center mt-20" id="forPrint">
+               <!--Tsootsoololinn heseg--->
+               <div class="row mb-100 mt-100">
+                  <div class="col-md-7 col-sm-10  col-xs-12 wow fadeInUp">
+                     <div class="section-title section-title2">
+                        <img src="assets/images/544X180.png" alt="" width="300px" height="150px">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 myPhoto">
+                  <img id="resultPhoto" data-image="red" class="isactive" src="assets/images/1window/g.jpg" alt="Битүү">
+                  <center><span id="resultHeight">1000</span> x <span id="resultWidth">500mm</span></center>
+               </div>
+               <div class="col-md-8">
+                  <ul class="list-grou">
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Window details: &nbsp;
+                           <p id="brandContent" >Euro Standart</p>
+                           ,&nbsp;
+                        </div>
+                        <span id="onlyWindowPrice" class="d-none">125 $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Window details: &nbsp;
+                           <p id="glassWindow"> 2 layers</p>
+                        </div>
+                        <span id="onlyWindowPrice" class="d-none">125 $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Window opener: &nbsp;
+                           <p id="windowContent"> Deaf</p>
+                           ,&nbsp;&nbsp;
+                        </div>
+                        <span id="onlyWindowTypePrice" class="d-none">0 $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Inside promise:&nbsp; 
+                           <p id="amalgaaSize">20см length</p>
+                           ,&nbsp;&nbsp;
+                           <p id="amalgaaColor">White</p>
+                        </div>
+                        <span id="amalgaaPrice" class="d-none">21 $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Lining:&nbsp; 
+                           <p id="tawtsanSize">20см length</p>
+                           ,&nbsp;&nbsp;
+                           <p id="tawtsanColor">White</p>
+                        </div>
+                        <span id="tawtsanPrice" class="d-none">12 $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Exterior Valve:&nbsp; 
+                           <p id="haylagaSize">20см length</p>
+                           ,&nbsp;&nbsp;
+                           <p id="haylagaColor"> White</p>
+                        </div>
+                        <span id="haylagaPrice" class="d-none">6 $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Window colors:&nbsp;&nbsp;
+                           <p id="resultColor">White</p>
+                           ,&nbsp;&nbsp;
+                           <p id="resultSide">1-side</p>
+                        </div>
+                        <span id="coloringPrice" class="d-none"> $</span>
+                     </li>
+                     <li class="list-group-item myWrap">
+                        <div>
+                           Total:
+                        </div>
+                        <span id="lastResult" class="d-none" style="margin-top: -23px;">173 $</span>
+                        <span id="fres" class="badge" style="margin-top: -23px;"> 00$</span>
+                     </li>
+                  </ul>
+                  <!-- <div class="product-price result-button mt-20">
+                     <div>
+                         <button id="selectedOrder" data-toggle="modal" data-target="#largeModal" class="agree-btn cart-btn">Order Now
+                         </button>
+                         <button class="agree-btn cart-btn" onclick="printJS({ printable: 'forPrint', type: 'html', targetStyles:['*'] })">Print
+                         </button>
+                     </div>
+                     </div>
+                     </div> -->
+                  <!---Column ------------>
+               </div>
+               <!--Calculation row ending--->
+            </div>
+            <!--forPrint ID ending--------->
+         </div>
+         <!--------------container--ending------------------------------------------------------------------------------------------------->
+         <div class="row">
+         <div class="col-md-4 col-sm-1"></div>
+         <div class="col-md-7 col-sm-1 row">
+            <div class="product-price result-button mt-20">
+               <form action="PayslipServlet" method="get">
+                  <div class="form-group  " style="">
+                     <label for="example-text-input" class="col-sm-2 col-form-label" style="margin-top: 15px;;">Totali</label>
+                     <div class="col-sm-3">
+                        <input class="form-control" type="text" name="fname" id="fname" style="margin-top: 13px;"><br/>
+                     </div>
+                     <button type="button" value="Submit"  class="agree-btn cart-btn" onClick="pr()" >Ruaj Totalin </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="col-md-1 col-sm-6" style="margin-left: -220px;">
+            <div class="product-price result-button mt-20">
+               <div class="form-group">
+                  <button class="agree-btn cart-btn" onclick="printJS({ printable: 'forPrint', type: 'html', targetStyles:['*'] })">Print</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--End Main Content-->
+      <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Order field</h4>
+               </div>
+               <div class="modal-body">
+                  <form method="POST" action="#">
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required oninvalid="this.setCustomValidity('Please enter email address')" oninput="this.setCustomValidity('')">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputText1">Phone</label>
+                        <input type="number" name="phone" class="form-control" id="exampleInputText1" placeholder="Phone" required oninvalid="this.setCustomValidity('Please enter phone number')" oninput="this.setCustomValidity('')">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputName1">First name</label>
+                        <input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Name" required oninvalid="this.setCustomValidity('Please enter name')" oninput="this.setCustomValidity('')">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputAddress1">Shipping Address</label>
+                        <input type="text" name="order_address" class="form-control" id="exampleInputAddress1" placeholder="Address" required oninvalid="this.setCustomValidity('Please enter address')" oninput="this.setCustomValidity('')">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputType1">Window Detais</label>
+                        <input type="text" name="window_type" class="form-control" id="exampleInputType1" readonly value="">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputSize1">Window Size</label>
+                        <input type="text" name="window_size" class="form-control" id="exampleInputSize1" readonly value="">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputPrice1">Price</label>
+                        <input type="text" name="window_price" class="form-control" id="exampleInputPrice1" readonly value="">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputQuantity1">Window Quantity</label>
+                        <input type="number" name="window_quantity" class="form-control" id="exampleInputQuantity1" readonly value="">
+                     </div>
+               </div>
+               <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="submit" class="btn btn-primary">Submit</button>
+               </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <!-- footer-area start-->
+      <footer>
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12  col wow fadeInUp" data-wow-delay=".1s">
+                     <div class="footer-widget footer-logo">
+                        <h1>Window Price Calculator</h1>
+                        <p>It is our responsibility to serve you promptly.</p>
+                        <ul>
+                           <li><i class="fa fa-phone"></i> (+001) 0870120306</li>
+                           <li><i class="fa fa-envelope"></i> test@support.com</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                     <div class="footer-widget footer-menu">
+                        <h2>Main Menu</h2>
+                        <ul>
+                           <li><a href="">This is Sample</a></li>
+                           <li><a href="">This is Sample</a></li>
+                           <li><a href="">This is Sample</a></li>
+                           <li><a href="">This is sample</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s">
+                     <div class="footer-widget instagram-wrap">
+                        <h2>Social Links</h2>
+                        <ul>
+                           <li><a href="#"><img src="#" alt=""></a></li>
+                           <li><a href="#"><img src="#" alt=""></a></li>
+                           <li><a href="#"><img src="#" alt=""></a></li>
+                           <li><a href="#"><img src="#" alt=""></a></li>
+                           <li><a href="#"><img src="#" alt=""></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s">
+                     <div class="footer-widget quick-contact">
+                        <h2>Contact us</h2>
+                        <form action="" method="POST">
+                           <input type="number" name="phone" placeholder="phone">
+                           <input type="email" name="email" placeholder="email">
+                           <input type="hidden" name="name" value="unknown">
+                           <input type="hidden" name="title" value="unknown">
+                           <textarea name="text" id="massage" cols="30" rows="10" placeholder="texts"></textarea>
+                           <button type="submit" name="button" class="btn-style">Send us</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom text-center">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     Copyright &copy;&nbsp; 2019
+                     | &nbsp;
+                     <i class="fa fa-code" aria-hidden="true"></i>
+                     <a href="#" target="_blank" class="textWhite">
+                     Gegeensoft llc
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer-area end  -->
+      <!-- all js here -->
+      <!-- jquery latest version -->
+      <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- main js -->
+      <script src="assets/js/scripts.js"></script>
+      <!----print js -------------------------->
+      <script src="assets/js/print.min.js"></script>
+   </body>
+</html>

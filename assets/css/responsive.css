@@ -1,0 +1,382 @@
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+
+}
+/* (1199x768) WXGA Display */
+@media  screen and (max-width: 1199px) {
+    .mainmenu ul li > a {
+    	padding: 22px 7px;
+    }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    .mainmenu ul li > a {
+    	padding: 22px 7px;
+    }
+    .featured-wrap ul li .featured-content .featured-info {
+        padding: 15px 10px;
+    }
+    .featured-wrap ul li .featured-content p {
+        font-size:12px;
+    }
+    .prallex-wrap h2 {
+        font-size: 36px;
+    }
+    .newsletter-form form {
+        margin: 30px 0px;
+    }
+    .home2-service-area .service-content {
+    	padding: 30px 10px;
+    }
+    .home2-service-area .service-content p{
+        font-size: 13px;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    body{
+        margin: 0px !important;
+    }
+    .header-area {
+        position: static !important;
+    }
+    .about-img {
+        display: none;
+    }
+    .featured-wrap ul li .featured-content .featured-img {
+        display: none;
+    }
+    .featured-wrap ul li .featured-content .featured-info {
+        width: 100%;
+    }
+    .faq-form.form-style {
+        margin-top: 50px;
+    }
+    .form-style span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .client-info p {
+        font-size: 13px;
+    }
+    .newsletter-form form {
+        margin-bottom: 0;
+    }
+    .service-wrap,.portfolio-wrap,.team-wrap,.blog-wrap,.footer-widget {
+        margin-bottom: 30px;
+    }
+    .header-middle::before {
+    	display: none;
+    }
+    .header-middle-right ul {
+    	justify-content: flex-start;
+    }
+    .slider-items {
+    	height: 400px;
+    }
+    .about-wrap {
+    	height: 420px !important;
+    }
+    .team-area{
+        padding: 100px 0px 70px;
+    }
+	.pb-140{padding-bottom:100px;}
+    .home2-service-area {
+    	padding-top: 0;
+    }
+    .team-wrap2{
+        margin-bottom: 30px;
+    }
+    .team-area2,.pricing-table-area{
+        padding: 0px 0px 70px;
+    }
+    .single-service-wrap {
+        margin-bottom: 30px;
+    }
+    .quote-wrap a {
+        padding: 8px 20px;
+    }
+    .footer-top {
+        padding: 100px 0px 70px;
+    }
+    .portfolio-area3 .portfolio{
+        width: 50%;
+    }
+    aside.right-sidebar {
+        margin-top: 50px;
+    }
+    aside.left-sidebar {
+        margin-bottom: 50px;
+    }
+    section.team-area.team-area2.team-area3.ptb-100,.pricing-page-one {
+        padding: 100px 0px 70px;
+    }
+	.pricing-page-area{
+		padding:180px 0px 70px;
+	}
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container{width:100%}
+    body{
+        margin: 0px !important;
+    }
+    .header-area,.sticky {
+        position: static !important;
+    }
+    .service-wrap,.portfolio-wrap,.team-wrap,.blog-wrap,.footer-widget {
+        margin-bottom: 30px;
+    }
+    .about-img {
+        margin-bottom: 40px;
+    }
+    .section-title p {
+        margin-bottom: 25px;
+    }
+    .faq-form.form-style {
+        margin-top: 40px;
+    }
+    .slider-items {
+    	height: 400px;
+    }
+    .slider-items img{visibility: hidden;}
+    .slider-content h2 {
+        font-size: 25px;
+    }
+    .slider-content p {
+    	margin-bottom: 20px;
+    	font-size: 13px;
+    }
+    .responsive-menu-wrap .slicknav_btn {
+    	padding: 28px 3px;
+    	width: 65px;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+    	width: 290px;
+    	right: -9px;
+    }
+    .about-wrap ul li {
+    	font-size: 13px;
+    }
+    .ptb-100{
+        padding: 100px 0px;
+    }
+    .about-img.black-opacity {
+        height: 300px !important;
+    }
+    .fanfact-area{
+        padding: 100px 0px 80px;
+    }
+    .fanfact-wrap {
+        margin-bottom: 25px;
+    }
+    .featured-area {
+    	display: none;
+    }
+    .section-title h2 {
+    	font-size: 25px;
+    }
+    .prallex-wrap h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .pb-100{padding-bottom: 70px}
+    .portfolio-menu button {
+    	padding: 7px 15px;
+    	margin-bottom: 5px;
+    	font-size: 11px;
+    }
+    .fanfact-wrap h2 {
+    	font-size: 26px;
+    }
+    .fanfact-wrap p {
+    	font-size: 12px;
+    }
+    .team-area,.ptb-70{
+        padding: 100px 0px 70px;
+    }
+    .pb-100{padding-bottom: 70px;}
+    .header-middle::before {
+    	display: none;
+    }
+    .header-middle-right ul {
+    	justify-content: flex-start;
+    }
+    .service-area,.team-area{
+        padding: 100px 0px 70px;
+    }
+    .home2-service-area {
+    	padding-top: 0;
+    }
+    .team-wrap2{
+        margin-bottom: 30px;
+    }
+    .team-area2,.pricing-table-area{
+        padding: 0px 0px 70px;
+    }
+    .skill-img {
+    	display: none;
+    }
+    .header-top-left,.header-top-right {
+    	text-align: center;
+    }
+    .header-middle-right ul {
+    	display: block;
+    }
+    .header-middle-right ul li {
+    	margin-left: 0;
+    	margin-bottom: 10px;
+    }
+    .progress-bar span.progress-persent {
+    	right: -10px;
+    }
+    .next-prev-style .owl-nav div {
+    	right: 30%;
+    	bottom: -20px;
+        top: auto;
+    }
+    .next-prev-style .owl-nav div.owl-next {
+    	right: 50%;
+    }
+    .pricing-active {
+    	margin-bottom: 50px;
+    }
+    .company-details-wrap h2 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+    .quote-wrap h2 {
+        font-size: 18px;
+        margin: 0px 0px 20px;
+        line-height: 30px;
+    }
+    .quote-wrap {
+        text-align: center;
+    }
+    .breadcumb-area {
+        height: 350px;
+    }
+    .single-service-wrap blockquote {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .single-service-wrap h4 {
+        font-size: 20px;
+    }
+    .single-service-wrap {
+        margin-bottom: 30px;
+    }
+    .footer-top {
+        padding: 100px 0px 70px;
+    }
+    .portfolio-area3 .portfolio{
+        width: 100%;
+    }
+    aside.right-sidebar {
+        margin-top: 50px;
+    }
+    aside.left-sidebar {
+        margin-bottom: 50px;
+    }
+    .comment-theme {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .comment-main-area {
+        margin-left: 0;
+    }
+    .sewl-comments-meta h4 span {
+        font-size: 12px;
+        display: block;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    section.team-area.team-area2.team-area3.ptb-100,.pricing-page-one,.pricing-page-area {
+        padding: 100px 0px 70px;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* Large Mobile :375px. */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .container {width:100%}
+    .responsive-menu-wrap .slicknav_nav {
+    	width: 350px;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:100%}
+    .responsive-menu-wrap .slicknav_nav {
+    	width: 450px;
+    }
+}
+/* Tablet desktop :768px. */
+@media (min-width: 600px) and (max-width: 767px) {
+    .col{
+        width: 50%;
+        float: left;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+        width: 570px;
+    }
+    .search-wrap ul li {
+        right: 30px;
+    }
+    body,.slider-content p{
+        font-size: 13px;
+    }
+    .service-content{
+        padding: :25px 10px;
+    }
+    .featured-wrap ul li .featured-content .featured-img {
+        display: none;
+    }
+    .featured-wrap ul li .featured-content .featured-info {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .prallex-wrap h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .blog-content {
+        padding: 20px 10px 30px;
+    }
+    .footer-widget {
+        min-height: 235px;
+    }
+    .featured-area {
+    	display: block;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .responsive-menu-wrap .slicknav_btn {
+    	padding: 28px 20px;
+    	width: 100px;
+    }
+    .section-title p {
+    	font-size: 14px;
+    }
+    .portfolio-area3 .portfolio{
+        width: 50%;
+    }
+    .blog-meta ul li {
+        margin-right: 8px;
+    }
+    .blog-content h3 a {
+        font-size: 16px;
+    }
+}
